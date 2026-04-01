@@ -2,6 +2,7 @@
 import { Calendar, MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
 import TicketPurchase from './TicketPurchase'
+import { getPublicUrl } from '@/lib/supabase'
 
 export default function Hero() {
     return (
@@ -31,7 +32,7 @@ export default function Hero() {
                 >
                     {/* The "Spring Day" logo text mimicking the image */}
                     <h1 className="text-7xl md:text-8xl font-script text-neon-yellow logo-shadow transform -rotate-2 select-none flex justify-center w-full">
-                        <img src="/spring.svg" alt="Spring Day Logo" className="w-[60vw] sm:w-[50vw] md:w-[40vw] lg:w-[35vw] max-w-xl drop-shadow-[0_0_15px_rgba(255,255,0,0.8)]" />
+                        <img src={getPublicUrl('spring.svg')} alt="Spring Day Logo" className="w-[60vw] sm:w-[50vw] md:w-[40vw] lg:w-[35vw] max-w-xl drop-shadow-[0_0_15px_rgba(255,255,0,0.8)]" />
                     </h1>
                 </motion.div>
 

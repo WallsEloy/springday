@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { usePathname } from 'next/navigation'
+import { getPublicUrl } from '@/lib/supabase'
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false)
@@ -45,7 +46,7 @@ export default function Navbar() {
                 <div className="flex items-center">
                     <a href="#" className="flex items-center transition-transform hover:scale-105">
                         <img 
-                            src="/logo_abrev.png" 
+                            src={getPublicUrl('logo_abrev.png')} 
                             alt="Logo SD5" 
                             className="h-10 w-auto"
                         />

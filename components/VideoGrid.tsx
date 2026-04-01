@@ -23,9 +23,9 @@ export default function VideoGrid() {
 
             <div className="flex flex-col w-full relative">
                 {[
-                    getPublicUrl('secuencia_03.mp4'), 
-                    getPublicUrl('secuencia_03_1.mp4'), 
-                    getPublicUrl('secuencia_03_2.mp4')
+                    getPublicUrl('Secuencia_03.mp4'), 
+                    getPublicUrl('Secuencia_03_1.mp4'), 
+                    getPublicUrl('Secuencia_03_2.mp4')
                 ].map((videoSrc, index) => (
                     <motion.div
                         key={index}

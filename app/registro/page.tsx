@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import Navbar from '@/components/Navbar'
 import { useState } from 'react'
-import { supabase } from '@/lib/supabase'
+import { supabase, getPublicUrl } from '@/lib/supabase'
 
 export default function Registro() {
     const [formData, setFormData] = useState({
@@ -123,7 +123,7 @@ export default function Registro() {
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-yellow"></div>
                         
                         <div className="flex justify-center mb-8">
-                            <img src="/spring.svg" alt="Spring Day Logo" className="h-24 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]" />
+                            <img src={getPublicUrl('spring.svg')} alt="Spring Day Logo" className="h-24 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]" />
                         </div>
 
                         <div className="text-center mb-10">

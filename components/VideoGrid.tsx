@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import { getPublicUrl } from '@/lib/supabase'
 
 export default function VideoGrid() {
     return (
@@ -21,7 +22,11 @@ export default function VideoGrid() {
             </motion.div>
 
             <div className="flex flex-col w-full relative">
-                {['/secuencia_03.mp4', '/secuencia_03_1.mp4', '/secuencia_03_2.mp4'].map((videoSrc, index) => (
+                {[
+                    getPublicUrl('secuencia_03.mp4'), 
+                    getPublicUrl('secuencia_03_1.mp4'), 
+                    getPublicUrl('secuencia_03_2.mp4')
+                ].map((videoSrc, index) => (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 50 }}

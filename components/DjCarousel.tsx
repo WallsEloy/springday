@@ -1,21 +1,22 @@
 'use client'
 import { motion } from 'framer-motion'
+import { getPublicUrl } from '@/lib/supabase'
 
 export default function DjCarousel() {
     // We duplicate the array to achieve seamless infinite scrolling
     const djs = [
-        { name: 'DJ Alan', style: 'Live Set', img: '/djs/alanMesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Antonis', style: 'Live Set', img: '/djs/antonisMesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Chipax', style: 'Live Set', img: '/djs/chipaxMesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Drope', style: 'Live Set', img: '/djs/dropeMesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Francia', style: 'Live Set', img: '/djs/f1Mesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Ivan', style: 'Live Set', img: '/djs/ivanMesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Leonard', style: 'Live Set', img: '/djs/leonardMesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Nur', style: 'Live Set', img: '/djs/nurMesa de trabajo 1 copia.jpg' },
-        { name: 'DJ SeA2', style: 'Live Set', img: '/djs/seA2Mesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Se', style: 'Live Set', img: '/djs/seMesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Sell2', style: 'Live Set', img: '/djs/sell2Mesa de trabajo 1 copia.jpg' },
-        { name: 'DJ Subieta', style: 'Live Set', img: '/djs/subietaMesa de trabajo 1 copia.jpg' },
+        { name: 'DJ Alan', style: 'Live Set', img: getPublicUrl('djs/alanMesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Antonis', style: 'Live Set', img: getPublicUrl('djs/antonisMesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Chipax', style: 'Live Set', img: getPublicUrl('djs/chipaxMesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Drope', style: 'Live Set', img: getPublicUrl('djs/dropeMesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Francia', style: 'Live Set', img: getPublicUrl('djs/f1Mesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Ivan', style: 'Live Set', img: getPublicUrl('djs/ivanMesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Leonard', style: 'Live Set', img: getPublicUrl('djs/leonardMesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Nur', style: 'Live Set', img: getPublicUrl('djs/nurMesa de trabajo 1 copia.jpg') },
+        { name: 'DJ SeA2', style: 'Live Set', img: getPublicUrl('djs/seA2Mesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Se', style: 'Live Set', img: getPublicUrl('djs/seMesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Sell2', style: 'Live Set', img: getPublicUrl('djs/sell2Mesa de trabajo 1 copia.jpg') },
+        { name: 'DJ Subieta', style: 'Live Set', img: getPublicUrl('djs/subietaMesa de trabajo 1 copia.jpg') },
     ]
 
     return (
